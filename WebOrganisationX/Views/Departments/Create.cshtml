@@ -1,0 +1,53 @@
+﻿@model WebOrganisationX.Models.Department
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Department</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DepId" class="control-label"></label>
+                <input asp-for="DepId" class="form-control" />
+                <span asp-validation-for="DepId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeptType" class="control-label"></label>
+                <input asp-for="DeptType" class="form-control" />
+                <span asp-validation-for="DeptType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BusTravel" class="control-label"></label>
+                <input asp-for="BusTravel" class="form-control" />
+                <span asp-validation-for="BusTravel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobLevel" class="control-label"></label>
+                <input asp-for="JobLevel" class="form-control" />
+                <span asp-validation-for="JobLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobRole" class="control-label"></label>
+                <input asp-for="JobRole" class="form-control" />
+                <span asp-validation-for="JobRole" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

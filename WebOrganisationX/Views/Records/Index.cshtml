@@ -1,0 +1,53 @@
+﻿@model IEnumerable<WebOrganisationX.Models.Record>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NumOfComW)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearsInCurRole)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearsAtCom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalWyears)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumOfComW)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearsInCurRole)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearsAtCom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalWyears)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.RecId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.RecId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.RecId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

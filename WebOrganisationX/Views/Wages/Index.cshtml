@@ -1,0 +1,47 @@
+﻿@model IEnumerable<WebOrganisationX.Models.Wage>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HourlyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MonthlyRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OverTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HourlyRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthlyRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OverTime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.WageId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.WageId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.WageId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

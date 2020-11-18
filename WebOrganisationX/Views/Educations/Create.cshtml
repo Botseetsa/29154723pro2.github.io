@@ -1,0 +1,43 @@
+﻿@model WebOrganisationX.Models.Education
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Education</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="EduId" class="control-label"></label>
+                <input asp-for="EduId" class="form-control" />
+                <span asp-validation-for="EduId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EduField" class="control-label"></label>
+                <input asp-for="EduField" class="form-control" />
+                <span asp-validation-for="EduField" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EduYears" class="control-label"></label>
+                <input asp-for="EduYears" class="form-control" />
+                <span asp-validation-for="EduYears" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
