@@ -7764,11 +7764,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\10019243\\Desktop\\WebOrganisationX\\WebOrganisationX.csproj",
+      "projectUniqueName": "C:\\Users\\10019243\\Documents\\GitHub\\29154723pro2.github.io\\WebOrganisationX\\WebOrganisationX.csproj",
       "projectName": "WebOrganisationX",
-      "projectPath": "C:\\Users\\10019243\\Desktop\\WebOrganisationX\\WebOrganisationX.csproj",
+      "projectPath": "C:\\Users\\10019243\\Documents\\GitHub\\29154723pro2.github.io\\WebOrganisationX\\WebOrganisationX.csproj",
       "packagesPath": "C:\\Users\\10019243\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\10019243\\Desktop\\WebOrganisationX\\obj\\",
+      "outputPath": "C:\\Users\\10019243\\Documents\\GitHub\\29154723pro2.github.io\\WebOrganisationX\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\10019243\\AppData\\Roaming\\NuGet\\NuGet.Config",
