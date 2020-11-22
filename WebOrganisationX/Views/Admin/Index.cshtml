@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Admin Page</h1>
+
+<div class="myn_navbar">
+    <div class="myn_dropdown">
+        <button class="myn_dropbtn" onclick="myFunction()">
+            ViewInfo
+            <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="myn_dropdown-content">
+
+
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Departments" asp-action="Index">Employee Department</a>
+                </li>
+            </ul>
+            <br />
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Educations" asp-action="Index">Education History</a>
+                </li>
+            </ul>
+            <br />
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Employees" asp-action="Index">Employees History</a>
+                </li>
+            </ul>
+            <br />
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Records" asp-action="Index">Employee Records</a>
+                </li>
+            </ul>
+            <br />
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Wages" asp-action="Index">Employee Income</a>
+                </li>
+            </ul>
+
+
+        </div>
+        </div>
+</div>

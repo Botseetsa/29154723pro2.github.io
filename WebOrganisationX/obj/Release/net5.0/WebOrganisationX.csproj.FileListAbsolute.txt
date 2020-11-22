@@ -235,3 +235,5 @@ C:\Users\10019243\Documents\GitHub\29154723pro2.github.io\WebOrganisationX\obj\R
 C:\Users\10019243\Documents\GitHub\29154723pro2.github.io\WebOrganisationX\obj\Release\net5.0\ref\WebOrganisationX.dll
 C:\Users\10019243\Documents\GitHub\29154723pro2.github.io\WebOrganisationX\obj\Release\net5.0\WebOrganisationX.pdb
 C:\Users\10019243\Documents\GitHub\29154723pro2.github.io\WebOrganisationX\obj\Release\net5.0\WebOrganisationX.genruntimeconfig.cache
+C:\Users\10019243\Documents\GitHub\29154723pro2.github.io\WebOrganisationX\obj\Release\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\10019243\Documents\GitHub\29154723pro2.github.io\WebOrganisationX\obj\Release\net5.0\Razor\Views\Manager\Index.cshtml.g.cs
